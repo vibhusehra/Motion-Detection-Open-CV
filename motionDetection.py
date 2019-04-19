@@ -33,6 +33,8 @@ while True:
 
 	#if the observed difference is quite significant, we will print motion detected
 	if np.mean(diff) > 3:
+		#displaying text on the cam window
+		cv2.putText(diffGray,"Motion Detected", (100,100), cv2.FONT_HERSHEY_SIMPLEX, 2, 255)
 		print("Motion Detected!!")
 
 	cv2.imshow('Video',diffGray) #displaying the difference of last 2 frames(Grayscale)
