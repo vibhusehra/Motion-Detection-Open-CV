@@ -3,7 +3,7 @@
 <h3>How does this work?</h3>
 <p>
 We take 2 consecutive frames and try to detect any difference between the two frames.<br/>
-If the difference in the mean of the 2 numpy arrays obtained is quite significant, we print 'Motion Detected'.<br/>
+If the mean of the 2 numpy arrays obtained from the 2 frames is quite significant, we print 'Motion Detected'.<br/>
 </p>
 
 <h3>Example:</h3>
